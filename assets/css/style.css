@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+/* Margin & Padding */
+.pt-80 {
+  padding-top: 80px;
+}
+.pb-80 {
+  padding-bottom: 80px;
+}
+
+/* Section Title CSS */
+.section-title {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.section-title h2 {
+  font-size: 40px;
+  text-transform: capitalize;
+  font-weight: 700;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+.section-title h2:before {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 2px;
+  background-color: #ff3636;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.section-title h2:after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #ff3636;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  bottom: -4px;
+}
+
+/* Button CSS */
+.box-btn {
+  background-color: #ff3636;
+  color: #fff;
+  display: inline-block;
+  padding: 10px 30px;
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s;
+}
+.box-btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+.box-btn i {
+  position: absolute;
+  left: 3px;
+  top: 14px;
+  transition: 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+.box-btn:hover i {
+  left: 9px;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Header CSS */
+.header-area {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  padding: 20px 0;
+}
+.header-area a {
+  color: #fff !important;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 15px;
+}
+.header-area .navbar-brand {
+  font-size: 30px;
+  border: 1px solid #fff;
+  padding: 10px 20px;
+}
+.navbar-nav li a:hover {
+  color: tomato !important;
+}
+
+/* Banner CSS */
+
+.banner-area {
+  height: 100vh;
+  position: relative;
+  z-index: 5;
+}
+.banner-area:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #333;
+  z-index: -1;
+  opacity: 0.75;
+}
+.banner-area video {
+  position: absolute;
+  z-index: -2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.banner-content {
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
+.banner-content h1 {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 80px;
+}
+.banner-content p {
+  text-transform: capitalize;
+  font-size: 24px;
+}
+.banner-content a {
+  margin-top: 25px;
+}
+
+/* About CSS */
+
+.about-content h4 {
+  font-size: 40px;
+  text-transform: capitalize;
+  font-weight: 700;
+  color: #ff3636;
+}
+.about-content h5 {
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+.about-content ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.about-content ul li {
+  margin-bottom: 5px;
+}
+.about-content ul li i {
+  color: #ff3636;
+}
+.about-content a {
+  margin-top: 30px;
+}
+
+/* Services CSS */
+
+.services-area {
+  background-color: #f6f6f6;
+}
+.single-service {
+  text-align: center;
+  background-color: #fff;
+  padding: 40px 20px;
+  border: 1px solid #f2f2f2;
+  margin-top: 30px;
+  position: relative;
+}
+.single-service span {
+  position: absolute;
+  left: 10px;
+  top: 20px;
+  color: #f2f2f2;
+  font-size: 70px;
+  font-family: "Open Sans";
+  font-weight: 700;
+}
+.single-service i {
+  background-color: #ff3636;
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 25px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.single-service h4 {
+  margin: 15px 0;
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: 600;
+}
+.single-service:hover i {
+  border-radius: 50%;
+}
